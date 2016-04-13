@@ -9,6 +9,13 @@
 
 				<div class="panel-body">
 					You are logged in!
+					<br />
+					<b>Rolls : </b> 
+					<ul>
+					@foreach ($roles as $role)
+									<li>{{ $role->description }}</li>
+					@endforeach
+					</ul>
 				</div>
 			</div>
 		</div>
